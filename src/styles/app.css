@@ -18,15 +18,90 @@
 	box-sizing: border-box;
 }
 
+@font-face {
+  font-family: 'Sweet Antihero';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100 900;
+  src: url("/fonts/Sweet-Antihero/Sweet-Antihero.ttf") format("truetype");
+}
+@font-face {
+  font-family: 'Cowboy';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100 900;
+  src: url("/fonts/COWBOY/COWBOY.ttf") format("truetype");
+}
+@font-face {
+    font-family: 'Maple Mono';
+    src: url('/fonts/MapleMono/MapleMono-NF-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-feature-settings: "cv01" 1, "cv02" 1, "cv04" 1, "ss01" 1, "ss02" 1, "ss03" 1, "ss04" 1, "ss05" 1;
+}
+
+@font-face {
+    font-family: 'Maple Mono';
+    src: url('/fonts/MapleMono/MapleMono-NF-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-feature-settings: "cv01" 1, "cv02" 1, "cv04" 1, "ss01" 1, "ss02" 1, "ss03" 1, "ss04" 1, "ss05" 1;
+}
+
+@font-face {
+    font-family: 'Maple Mono';
+    src: url('/fonts/MapleMono/MapleMono-NF-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-feature-settings: "cv01" 1, "cv02" 1, "cv04" 1, "ss01" 1, "ss02" 1, "ss03" 1, "ss04" 1, "ss05" 1;
+}
+
+@font-face {
+    font-family: 'Maple Mono';
+    src: url('/fonts/MapleMono/MapleMono-NF-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-feature-settings: "cv01" 1, "cv02" 1, "cv04" 1, "ss01" 1, "ss02" 1, "ss03" 1, "ss04" 1, "ss05" 1;
+}
+
+@font-face {
+    font-family: 'Maple Mono';
+    src: url('/fonts/MapleMono/MapleMono-NF-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-feature-settings: "cv01" 1, "cv02" 1, "cv04" 1, "ss01" 1, "ss02" 1, "ss03" 1, "ss04" 1, "ss05" 1;
+}
+
+@font-face {
+    font-family: 'Maple Mono';
+    src: url('/fonts/MapleMono/MapleMono-NF-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+    font-feature-settings: "cv01" 1, "cv02" 1, "cv04" 1, "ss01" 1, "ss02" 1, "ss03" 1, "ss04" 1, "ss05" 1;
+}
+
+h1 {
+  font-family: 'Sweet Antihero';
+}
+
+/* code comments... probably could be improved */
+.shiki-magic-move-item[style="color: rgb(106, 115, 125);"] {
+  font-style: italic;
+}
+
+.teal-emoji {
+  color: transparent;
+  text-shadow: 0 0 0 #0ed5d5;
+}
 /* defaults */
 :root {
-	--r-background-color: oklch(20% 0.01 272);
-	--r-main-font: 'Manrope Variable';
+	--r-background-color:  oklch(20% 0.01 272);
+	--r-main-font: 'Cowboy';
 	--r-main-font-size: 42px;
-	--r-main-color: oklch(98% 0.02 272);
+	--r-main-color: rgb(249, 239, 209); /*oklch(98% 0.02 272);*/
 	--r-heading-font: 'Manrope';
-	--r-code-font: 'JetBrains Mono Variable';
-	--r-link-color: oklch(90.54% 0.15 194);
+	--r-code-font: 'Maple Mono';
+	--r-link-color: #0ed5d5; /* oklch(90.54% 0.15 194); */
 	--ease: linear(
 		0 0%,
 		0.0036 9.62%,
@@ -50,10 +125,26 @@
 	);
 }
 
+a {
+  color: #0ed5d5;
+}
+
+/*slide container*/
+.reveal-viewport {
+  /* https://www.freepik.com/free-photo/seamless-beige-paper-texture-background_1164000.htm#query=cardboard%20texture%20seamless&position=1&from_view=keyword&track=ais_hybrid&uuid=d82298de-730f-4d77-88bb-c8bf52646cfe */
+  background-image: url('/paper.jpg');
+  background-size: 500px;
+  backdrop-filter: invert(60%) brightness(0.6) sepia(1.2) saturate(150%);
+	/* background-color: red !important; */
+}
+/*slide container inner*/
+.slides {
+}
+
 /* code block */
 div:has(> pre) {
 	padding: var(--spacing-4) var(--spacing-8);
-	background-color: oklch(24% 0.02 272);
+	background-color: #342816;
 	border-top: 1px solid oklch(34% 0.02 272);
 	border-radius: var(--radius-lg);
 }

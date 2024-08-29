@@ -20,6 +20,9 @@ dependencies:
   '@tailwindcss/vite':
     specifier: 4.0.0-alpha.14
     version: 4.0.0-alpha.14(vite@5.4.2)
+  dedent:
+    specifier: ^1.5.3
+    version: 1.5.3
   reveal.js:
     specifier: ^5.1.0
     version: 5.1.0
@@ -889,6 +892,15 @@ packages:
     dependencies:
       ms: 2.1.2
     dev: true
+
+  /dedent@1.5.3:
+    resolution: {integrity: sha512-NHQtfOOW68WD8lgypbLA5oT+Bt0xXJhiYvoR6SmmNXZfpzOGXwdKWmcwG8N7PwVVWV3eF/68nmD9BaJSsTBhyQ==}
+    peerDependencies:
+      babel-plugin-macros: ^3.1.0
+    peerDependenciesMeta:
+      babel-plugin-macros:
+        optional: true
+    dev: false
 
   /deepmerge@4.3.1:
     resolution: {integrity: sha512-3sUqbMEc77XqpdNO7FRyRog+eW3ph+GYCbj+rK+uYyRMuwsVy0rMiVtPn+QJlKFvWP/1PYpapqYn0Me2knFn+A==}
