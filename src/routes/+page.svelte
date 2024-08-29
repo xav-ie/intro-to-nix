@@ -33,6 +33,10 @@
 		'Awesome',
 		'Wonderful'
 	]
+
+	const makeFullScreen = () => {
+		document.documentElement.requestFullscreen()
+	}
 </script>
 
 <Presentation options={{ history: true, transition: 'slide', controls: true, progress: true }}>
@@ -51,6 +55,12 @@
 			<span class="teal-emoji pt-[2rem] text-8xl"> ❄️ </span>
 			<img src="/fonts/COWBOY/Vectors/Cactus.svg" alt="cactus" class="h-32 w-32" />
 		</div>
+
+		<button
+			on:click={makeFullScreen}
+			class="mt-16 rounded-lg border-2 border-white bg-transparent p-3 text-white"
+			>Make full screen</button
+		>
 	</Slide>
 
 	<!-- nix concepts -->
