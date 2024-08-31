@@ -46,7 +46,7 @@
 			<span>Declarative Builds with Nix</span>
 		</h1>
 		<p class="text-dimmed ml-[3rem] text-4xl">(and deployments) ^</p>
-		<div class="justify-content-center mt-16 flex flex-row items-center gap-8">
+		<div class="justify-content-center mt-8 flex flex-row items-center gap-8">
 			<img
 				src="/fonts/COWBOY/Vectors/Cowboy Hat with Lightning.svg"
 				alt="cowboy hat"
@@ -58,7 +58,7 @@
 
 		<button
 			on:click={makeFullScreen}
-			class="mt-16 rounded-lg border-2 border-white bg-transparent p-3 text-white"
+			class="mt-8 rounded-lg border-2 border-white bg-transparent p-3 text-white"
 			>Make full screen</button
 		>
 	</Slide>
@@ -80,7 +80,7 @@
 
 	<Slide class="h-full place-content-center place-items-center">
 		<h2>A simple example</h2>
-		<Transition class="mt-16" visible={true}>
+		<Transition class="mt-8" visible={true}>
 			<Code
 				class="max-h-[80dvh] overflow-scroll "
 				bind:this={codeNixSlide2}
@@ -96,7 +96,7 @@
 				options={{ duration: 600, stagger: 0.3, lineNumbers: true, containerStyle: false }}
 			/>
 		</Transition>
-		<Transition class="mt-16">
+		<Transition class="mt-8">
 			<Code
 				class="max-h-[80dvh] overflow-scroll "
 				bind:this={codeShSlide2}
@@ -119,7 +119,7 @@
 
 	<Slide class="h-full place-content-center place-items-center">
 		<h2>What else can we do?</h2>
-		<Transition class="mt-16" visible={true}>
+		<Transition class="mt-8" visible={true}>
 			<Code
 				class="max-h-[80dvh] overflow-scroll "
 				bind:this={codeNixSlide3}
@@ -140,7 +140,7 @@
 			/>
 		</Transition>
 
-		<Transition class="mt-16">
+		<Transition class="mt-8">
 			<Code
 				class="max-h-[80dvh] overflow-scroll "
 				bind:this={codeShSlide3}
@@ -172,7 +172,7 @@ error: cannot convert a thunk to JSON
 
 	<Slide class="h-full place-content-center place-items-center">
 		<h2>A little more advanced</h2>
-		<Transition class="mt-16" visible={true}>
+		<Transition class="mt-8" visible={true}>
 			<Code
 				class="max-h-[80dvh] overflow-scroll "
 				bind:this={codeNixSlide4}
@@ -195,7 +195,7 @@ error: cannot convert a thunk to JSON
 			/>
 		</Transition>
 
-		<Transition class="mt-16">
+		<Transition class="mt-8">
 			<Code
 				class="max-h-[80dvh] overflow-scroll "
 				bind:this={codeShSlide4}
@@ -262,7 +262,7 @@ system = "builtin"; unpack = false; url =
 
 	<Slide class="h-full place-content-center place-items-center">
 		<h2>A simpler command</h2>
-		<Transition class="mt-16" visible={true}>
+		<Transition class="mt-8" visible={true}>
 			<Code
 				class="max-h-[80dvh] overflow-scroll "
 				bind:this={codeNixSlide5}
@@ -285,7 +285,7 @@ system = "builtin"; unpack = false; url =
 			/>
 		</Transition>
 
-		<Transition class="mt-16">
+		<Transition class="mt-8">
 			<Code
 				class="max-h-[80dvh] overflow-scroll "
 				bind:this={codeShSlide5}
@@ -391,7 +391,7 @@ Hello, world!`}
 		<h1>
 			<span class="teal-emoji"> 📖</span> Resources
 		</h1>
-		<ul class="mt-16 text-left">
+		<ul class="mt-8 text-left">
 			<li><a href="discourse.nixos.org">discourse.nixos.org</a></li>
 			<li><a href="nix.dev">nix.dev</a></li>
 			<li><a href="wiki.nixos.org">wiki.nixos.org</a></li>
@@ -404,7 +404,7 @@ Hello, world!`}
 		<h1>
 			<span class="teal-emoji"> 🤠</span> Thank you! <span class="teal-emoji">🐮</span>
 		</h1>
-		<ul class="mt-16 text-left">
+		<ul class="mt-8 text-left">
 			<li><a href="xav.ie">xav.ie</a></li>
 			<li><a href="github.com/xav-ie">github.com/xav-ie</a></li>
 			<li><a href="x.com/xorlop">x.com/xorlop</a></li>
